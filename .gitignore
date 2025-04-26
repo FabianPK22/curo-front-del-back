@@ -1,7 +1,81 @@
+# Node modules
+node_modules/
 
-#archivos .env
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build output
+dist
+dist-ssr
+*.local
+
+# Ignorar el archivo .env
+env
 .env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.testing
 
-#Node modules
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# MacOS system files
+.DS_Store
+
+# TypeScript cache and build files
+*.tsbuildinfo
+
+# Vite cache
+.vite/
+
+# Husky configuration
+.husky/_/
+
+# ESLint cache
+.eslintcache
+
+# Prettier configuration
+.prettierignore
+
+# Coverage directory (for testing coverage)
+coverage/
+
+# Temp files
+temp/
+*.tmp
+*.swp
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE specific files
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Other
+.npm/
+.pnp.*
 node_modules
-.node_modules
