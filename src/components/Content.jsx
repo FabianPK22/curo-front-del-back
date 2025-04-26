@@ -6,6 +6,10 @@ import { CourseDatas2 } from './courseData/CourseDatas2'
 
 const Content = ({courses}) => {
   
+  if (!courses || courses.length < 2) {
+    return <p>Cargando cursos…</p>
+  }
+
   return (
 
     <>

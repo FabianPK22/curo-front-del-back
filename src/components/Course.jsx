@@ -3,16 +3,17 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 const Course = () => {
-  const [course, setCourse] = useState([])
+  
+
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+ const [course, setCourse] = useState([])
  
   useEffect(() => {
     axios
-      .get('http://localhost:3001/course')
-      .then(response => {
-        setCourse(response.data)
-      })
-  }, [])
-      
+      .get(`${API_URL}/course`)
+      .then(response => setCourse(response.data))
+      .catch(err => console.error(err))
+}, [API_URL])
 
   return (
     <>
