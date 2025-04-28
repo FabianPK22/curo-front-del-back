@@ -12,7 +12,11 @@ interface User {
 
 export function UsersData({ users }: { users: User[] }) {
    
-   
+   if(!users){
+    return(
+      <p>Cargando...</p>
+    )
+   }
    
    
    
